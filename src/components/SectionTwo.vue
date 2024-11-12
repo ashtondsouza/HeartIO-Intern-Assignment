@@ -127,7 +127,7 @@
         this.activeSection = this.activeSection === sectionId ? null : sectionId;
       },
       async fetchSectionData() {
-        const baseUrl = "http://api.tvmaze.com/search/shows?q=";
+        const baseUrl = "https://api.tvmaze.com/search/shows?q=";
         for (let section of this.sections) {
           try {
             const response = await fetch(`${baseUrl}${section.title}`);
